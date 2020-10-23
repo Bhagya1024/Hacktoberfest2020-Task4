@@ -4,10 +4,8 @@
 int main()
 {
     bool swap;
-    int j,m,temp=0,n=5;
+    int n=5,j,temp;
     int arr[5]={58,89,71,35,6};
-    
-    
     do{
         swap=false;
         for(j=0;j<n;j++)
@@ -19,11 +17,10 @@ int main()
                 arr[j+1]=temp;
                 swap=true;
             }
-        }   
+        }
     }while(swap);
-    
-    for(m=0;m<n;m++)
-    {
-        printf("%d ",arr[m]);
-    }
+    for(int m=0;m<n;m++)
+        {
+            printf("%d ",arr[m]);
+        }
 }
